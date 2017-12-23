@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">AygazProjesi</string>
+    <string name="e_mail_adresi">E-Mail Adresi</string>
+    <string name="title_activity_ana_tabbed">AnaTabbedActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_ana">AnaActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="siparis_sahibi"><u>Siparis Sahibi</u></string>
+    <string name="siparis_tarihi"><u>Siparis Tarihi</u></string>
+    <string name="siparis_verilenler"><u>Sipariş Verilenler</u></string>
+    <string name="adsoyad"><u>Ad - Soyad</u></string>
+    <string name="telefon"><u>Telefon</u></string>
+    <string name="adres"><u>Adres</u></string>
+    <string name="siparis_bilgisi"><u>Sipariş Bilgisi</u></string>
+    <string-array name="urunadeti">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+</resources>

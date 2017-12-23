@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.aygazprojesi.MainActivity"
+    android:background="@drawable/arkaplan"
+    android:id="@+id/scrollArkaPlan">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/aygazexpress" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:hintTextAppearance="@style/TextViewHint">
+        <EditText
+            android:hint="E-Mail Adresi"
+            android:id="@+id/etMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:hintTextAppearance="@style/TextViewHint">
+    <EditText
+        android:hint="Şifre "
+        android:id="@+id/etSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+
+<LinearLayout
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnGirisYap"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/mavibuton"
+        android:text="Giriş Yap"
+        android:textColor="@color/buttonYaziRengim"
+        android:textSize="20dp" />
+
+    <Button
+
+        android:id="@+id/btnKaydol"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/mavibuton"
+        android:text="KAYIT OL"
+        android:textColor="@color/buttonYaziRengim"
+        android:textSize="20dp" />
+</LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvSifreUnuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Şifreni Mi Unuttun?" />
+</LinearLayout>
+</ScrollView>

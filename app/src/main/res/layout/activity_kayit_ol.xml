@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.aygazprojesi.KayitOlActivity"
+    android:gravity="center_vertical"
+    android:background="@drawable/arkaplan"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Yeni Bir Hesap Oluştur"
+        android:textSize="24sp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputAdSoyad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textInputeMail"
+        android:layout_alignStart="@+id/textInputeMail"
+        android:layout_below="@+id/textView"
+        android:paddingBottom="10dp"
+        app:hintTextAppearance="@style/TextViewHint">
+
+        <EditText
+            android:id="@+id/etAdSoyad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ad-Soyad"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputeMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputAdSoyad"
+        app:hintTextAppearance="@style/TextViewHint"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <EditText
+            android:id="@+id/etMail"
+            android:hint="E-Mail Adresi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputSifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputeMail"
+        app:hintTextAppearance="@style/TextViewHint"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <EditText
+            android:id="@+id/etSifre"
+            android:hint="Şifre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputAdres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputSifre"
+        app:hintTextAppearance="@style/TextViewHint"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <EditText
+            android:id="@+id/etAdres"
+            android:hint="Adres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textPostalAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputTel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInputAdres"
+        app:hintTextAppearance="@style/TextViewHint"
+        android:paddingBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <EditText
+            android:id="@+id/etTel"
+            android:hint="Telefon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="phone" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnKaydol"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textInputTel"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mavibuton"
+        android:text="Kayıt Ol"
+        android:textAlignment="gravity"
+        android:textColor="@color/buttonYaziRengim"
+        android:textSize="20sp"
+        tools:textStyle="bold" />
+
+</RelativeLayout>
